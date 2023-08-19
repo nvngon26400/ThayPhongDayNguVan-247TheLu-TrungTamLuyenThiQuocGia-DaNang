@@ -731,14 +731,14 @@
 
           <div class="row mb-4">
             <div class="col-12">
-              <input type="email" class="form-control" placeholder="Email của học sinh hoặc phụ huynh">
+              <input type="email" class="form-control" placeholder="Email của học sinh hoặc phụ huynh" required>
             </div>
           </div>
 
           <div class="row mb-4">
             <div class="col-12">
               <textarea class="form-control" name="" id="" cols="30" rows="10"
-                placeholder="Nội dung nhắn đến thầy Phong"></textarea>
+                placeholder="Nội dung nhắn đến thầy Phong" required></textarea>
             </div>
           </div>
 
@@ -880,10 +880,15 @@
         event.preventDefault();
 
         // Lấy dữ liệu từ form
-        const firstName = form.querySelector("[placeholder='Họ']").value;
-        const lastName = form.querySelector("[placeholder='Tên']").value;
-        const email = form.querySelector("[placeholder='Email của bạn']").value;
-        const message = form.querySelector("[placeholder='Nội dung nhắn đến thầy Phong']").value;
+        const firstNameInput = form.querySelector("[placeholder='Họ']");
+        const lastNameInput = form.querySelector("[placeholder='Tên']");
+        const emailInput = form.querySelector("[placeholder='Email của học sinh hoặc phụ huynh']");
+        const messageInput = form.querySelector("[placeholder='Nội dung nhắn đến thầy Phong']");
+
+        const firstName = firstNameInput.value;
+        const lastName = lastNameInput.value;
+        const email = emailInput.value;
+        const message = messageInput.value;
 
         // Kiểm tra xem các trường đã được điền đầy đủ hay chưa
         if (!firstName || !lastName || !email || !message) {
