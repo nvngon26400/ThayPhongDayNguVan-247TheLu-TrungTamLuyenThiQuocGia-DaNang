@@ -122,6 +122,21 @@
       display: block;
       margin: 0 auto;
     }
+
+    @keyframes scaleAnimation {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+            /* border: 1px solid rgb(204, 12, 150);
+            padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255); */
+        }
+    }
+
+    .my-heading {
+        animation: scaleAnimation 1s infinite;
+    }
   </style>
 
 </head>
@@ -249,8 +264,8 @@
           <div class="col-lg-10 ml-auto">
             <div class="row" style="cursor: pointer;">
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                <div class="service h-100">
-                  <h3 style="margin: 0 auto; text-align: center; margin-bottom: 20px;">Lớp 6 <br>Chân trời sáng tạo</h3>
+                <div style="max-height: 400px;" class="service h-100">
+                  <h3 style="margin-bottom: 20px; border: 1px solid rgb(12, 204, 51); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">Lớp 6 <br>Chân trời sáng tạo</h3>
                   <p>Lịch học: </p>
                   <p>Thời gian: </p>
                   <p>Địa chỉ: 247 Thế Lữ - TT Luyện thi Quốc Gia</p>
@@ -258,7 +273,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="service h-100">
-                  <h3 style="margin: 0 auto; text-align: center; margin-bottom: 20px;">Lớp 7 <br>Kết nối tri thức</h3>
+                  <h3 style="margin-bottom: 20px; border: 1px solid rgb(255, 0, 247); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">Lớp 7 <br>Kết nối tri thức</h3>
                   <p>Lịch học: </p>
                   <p>Thời gian: </p>
                   <p>Địa chỉ: 247 Thế Lữ - TT Luyện thi Quốc Gia</p>
@@ -266,7 +281,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="service h-100">
-                  <h3 style="margin: 0 auto; text-align: center; margin-bottom: 20px;">Lớp 8 <br>Kết nối tri thức</h3>
+                  <h3 style="margin-bottom: 20px; border: 1px solid rgb(255, 0, 247); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">Lớp 8 <br>Kết nối tri thức</h3>
                   <p>Lịch học: </p>
                   <p>Thời gian: </p>
                   <p>Địa chỉ: 247 Thế Lữ - TT Luyện thi Quốc Gia</p>
@@ -275,8 +290,8 @@
 
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="service h-100">
-                  <h3
-                    style="margin-bottom: 20px; border: 3px solid red; font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 210px; text-align: center; background-color: rgb(255, 231, 246);">
+                  <h3 class="animate-button my-heading"
+                    style="margin-bottom: 20px; border: 3px solid red; font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 231, 246);">
                     Lớp 9 <br> Kì thi tuyển sinh 10</h3>
                   <p>Lịch học lớp 9.1: </p>
                   <p>Thời gian: </p>
@@ -288,7 +303,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="service h-100">
-                  <h3 style="margin: 0 auto; text-align: center; margin-bottom: 20px;">Lớp 10 <br>Kết nối tri thức</h3>
+                  <h3 style="margin-bottom: 20px; border: 1px solid rgb(255, 0, 247); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">Lớp 10 <br>Kết nối tri thức</h3>
                   <p>Lịch học: </p>
                   <p>Thời gian: </p>
                   <p>Địa chỉ: 247 Thế Lữ - TT Luyện thi Quốc Gia</p>
@@ -296,7 +311,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="service h-100">
-                  <h3
+                  <h3 class="animate-button my-heading"
                     style="margin-bottom: 20px; border: 3px solid red; font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 231, 246);">
                     Lớp 12 <br> Kì thi tốt nghiệp THPT</h3>
                   <p>Lịch học: </p>
