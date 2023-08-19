@@ -137,6 +137,28 @@
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
+
+    .back-to-top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      z-index: 1000;
+    }
+
+    .back-to-top-btn a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-to-top-btn a:hover {
+      background-color: #555;
+    }
   </style>
 
 </head>
@@ -176,6 +198,8 @@
                     <li><a href="#home-section" class="nav-link">Trang chủ</a></li>
                     <li><a href="#what-we-do-section" class="nav-link">Các lớp học</a></li>
                     <li><a href="#about-section" class="nav-link">Về thầy Phong</a></li>
+                    <li><a href="#book-section" class="nav-link">Tài liệu học tập</a></li>
+                    <li><a href="#album-section" class="nav-link">Hình ảnh</a></li>
                     <!-- <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
                     <li><a href="#studio-section" class="nav-link">Gallery</a></li> -->
                     <li><a href="#contact-section" class="nav-link">Liên hệ</a></li>
@@ -224,30 +248,37 @@
                 <p class="sub-text mb-3" style="font-family: 'Dancing Script', cursive; font-size: 30px;">Học Văn Chương
                   - Viết Nên Thành Công</p>
                 <a href="https://www.facebook.com/profile.php?id=100004922802354" target="_blank"
-                  style="display: block; font-weight: bold; border: 2px solid red; padding: 10px 20px; border-radius: 20px; background-color: rgb(255, 232, 232); margin: 10px auto; font-size: 20px; text-align: center;">Liên Hệ Thầy Phong qua Facebook</a>
+                  style="display: block; font-weight: bold; border: 2px solid red; padding: 10px 20px; border-radius: 20px; background-color: rgb(255, 232, 232); margin: 10px auto; font-size: 20px; text-align: center;">Liên
+                  Hệ Thầy Phong qua Facebook</a>
                 <p class="text-center">Có thể quét mã QR bên dưới</p>
                 <img class="mx-auto d-block mb-3" style="max-width: 150px;" src="images/qr.png" alt="">
                 <hr>
                 <p class="text-center" style="font-size: 15px;">Số điện thoại: <a href="tel:+0763001758"
                     style="font-weight: bold; color: rgb(255, 0, 0); font-size: 27px;">0763.001.758</a></p>
-                <p id="popup-trigger" class="text-center" style="cursor: pointer; font-size: 20px;"><img style="max-width: 30px;"
-                    src="https://s120-ava-talk.zadn.vn/e/6/2/5/36/120/16782d311b12da6d28daa13e343986b8.jpg" alt=""> Zalo của thầy
+                <p id="popup-trigger" class="text-center" style="cursor: pointer; font-size: 20px;"><img
+                    style="max-width: 30px;"
+                    src="https://s120-ava-talk.zadn.vn/e/6/2/5/36/120/16782d311b12da6d28daa13e343986b8.jpg" alt=""> Zalo
+                  của thầy
                   Phong tại đây</p>
                 <!-- Popup content -->
                 <div id="popup" class="popup text-center" style="border-top: 3px solid red; display: none;">
                   <p>Quét mã bên dưới để đến Zalo thầy Phong</p>
                   <p style="text-align: center; align-items: center;">
-                    <img class="mx-auto d-block mb-3" style="max-width: 350px;" src="https://scontent.fhan2-5.fna.fbcdn.net/v/t1.15752-9/368629515_185792991181406_4306385942971365621_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=vXD0TVYTuGIAX_03UkO&_nc_ht=scontent.fhan2-5.fna&oh=03_AdRUnOvVqG1l_5PIbsp0KDZnyip8KP9-OKFHF2FL66tMJg&oe=65078D34" alt="">
+                    <img class="mx-auto d-block mb-3" style="max-width: 350px;"
+                      src="https://scontent.fhan2-5.fna.fbcdn.net/v/t1.15752-9/368629515_185792991181406_4306385942971365621_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=vXD0TVYTuGIAX_03UkO&_nc_ht=scontent.fhan2-5.fna&oh=03_AdRUnOvVqG1l_5PIbsp0KDZnyip8KP9-OKFHF2FL66tMJg&oe=65078D34"
+                      alt="">
                   </p>
                   <button id="close-popup" style="border: 1px solid gray; border-radius: 15px; padding: 6px 10px;">Đóng
                   </button>
                 </div>
                 <p class="text-center" style="font-size: 15px;">Địa chỉ: <a
                     href="https://www.google.com/maps/d/u/0/edit?hl=vi&mid=1nBs9pgOqQoDUkviYyiyJ99PFWQIyCL8&ll=16.08105028551656%2C108.2343577&z=18"
-                    target="_blank" style="font-weight: bold; color: black; font-size: 20px;">247 Thế Lữ - Trung tâm luyện
+                    target="_blank" style="font-weight: bold; color: black; font-size: 20px;">247 Thế Lữ - Trung tâm
+                    luyện
                     thi Quốc Gia</a></p>
                 <p class="text-center"><a href="#contact-section" class="nav-link"
-                    style="display: inline-block; border: 2px solid red; padding: 10px 20px; border-radius: 20px; background-color: rgb(255, 232, 232); text-align: center; font-size: 20px;">Có thể bấm vào đây để nhắn tin đến Thầy</a></p>
+                    style="display: inline-block; border: 2px solid red; padding: 10px 20px; border-radius: 20px; background-color: rgb(255, 232, 232); text-align: center; font-size: 20px;">Có
+                    thể bấm vào đây để nhắn tin đến Thầy</a></p>
               </div>
             </div>
           </div>
@@ -263,7 +294,7 @@
               sau:</span>
             <h2 class="title text-primary">Gồm các lớp từ 6, 7, 8, 9, 10 và 12</h2>
           </div>
-          
+
         </div>
         <div class="row">
           <div class="col-lg-10 ml-auto">
@@ -378,7 +409,7 @@
       </div>
     </div> <!-- .END site-section -->
 
-    <div class="site-section" id="about-section">
+    <div class="site-section" id="book-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-5" style="cursor: pointer;">
@@ -392,19 +423,24 @@
               4. Các bài viết mẫu về phần làm văn.<br>
               5. Bộ đề thi chuẩn theo cấu trúc Sở.<br>
             </p>
-            <p style="font-size: 20px; font-weight: bolder; color: black; background-color: rgb(250, 215, 215); border: 1px solid red; padding: 10px 10px; max-width: 290px; border-radius: 20px; text-align: center;">
+            <p
+              style="font-size: 20px; font-weight: bolder; color: black; background-color: rgb(250, 215, 215); border: 1px solid red; padding: 10px 10px; max-width: 290px; border-radius: 20px; text-align: center;">
               <a href="https://www.facebook.com/profile.php?id=100004922802354" target="_blank">ĐĂNG KÍ HỌC NGAY 🥰</a>
             </p>
             <a href="#" style="text-decoration: underline;">>>> Đọc thử tại đây</a>
           </div>
           <div class="col-lg-5 ml-auto section-title">
-            <img src="https://f10-zpcloud.zdn.vn/4688190310660541728/89315ed78ff55dab04e4.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+            <img src="https://f10-zpcloud.zdn.vn/4688190310660541728/89315ed78ff55dab04e4.jpg"
+              alt="Free Website Template by Free-Template.co" class="img-fluid">
           </div>
         </div>
         <div class="row align-items-center">
           <div class="col-lg-6 mb-5" style="cursor: pointer;">
-            <p style="font-size: 16px; color: rgb(247, 109, 109); margin-top: 20px; font-weight: 500;"><i>Giới thiệu combo làm chủ kiến thức lớp 9</i></p>
-            <img style="max-width: 100%; margin-left: 0; margin-right: 0;" src="https://f12-zpc.zdn.vn/5147891724742742576/391f54d837f3e5adbce2.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid other-book" id="zoomable-image">
+            <p style="font-size: 16px; color: rgb(247, 109, 109); margin-top: 20px; font-weight: 500;"><i>Giới thiệu
+                combo làm chủ kiến thức lớp 9</i></p>
+            <img style="max-width: 100%; margin-left: 0; margin-right: 0;"
+              src="https://f12-zpc.zdn.vn/5147891724742742576/391f54d837f3e5adbce2.jpg"
+              alt="Free Website Template by Free-Template.co" class="img-fluid other-book" id="zoomable-image">
             <div class="modal" id="image-modal">
               <div class="modal-content">
                 <img class="modal-image" id="modal-image">
@@ -412,22 +448,26 @@
             </div>
           </div>
           <div class="col-lg-5 ml-auto section-title" style="margin-top: 20px; text-align: left;">
-            <p>Combo làm chủ kiến thức 9 gồm ba môn: Toán - Văn - Anh được các Thầy cô kinh nghiệm trong việc luyện thi Tuyển sinh 10 biên soạn.</p>
-            <p>Bám sát chương trình SGK và cấu trúc đề thi của Sở. Bên cạnh đó các Thầy cô cũng mở các khóa học trực tiếp.</p>
+            <p>Combo làm chủ kiến thức 9 gồm ba môn: Toán - Văn - Anh được các Thầy cô kinh nghiệm trong việc luyện thi
+              Tuyển sinh 10 biên soạn.</p>
+            <p>Bám sát chương trình SGK và cấu trúc đề thi của Sở. Bên cạnh đó các Thầy cô cũng mở các khóa học trực
+              tiếp.</p>
             <p><span style="font-weight: 600; font-size: 18px;">Chi tiết xin liên hệ:</span></p>
             <div>
-              <img style="max-width: 50px; vertical-align: middle;" src="https://f24-zpc.zdn.vn/5483950466948963090/8903c12cb50767593e16.jpg" alt=""> Môn Toán
-              <img style="max-width: 55px; vertical-align: middle;" src="https://f9-zpcloud.zdn.vn/5846337552905202452/0b1041af8f9a5dc4048b.jpg" alt=""> Môn Anh
+              <img style="max-width: 50px; vertical-align: middle;"
+                src="https://f24-zpc.zdn.vn/5483950466948963090/8903c12cb50767593e16.jpg" alt=""> Môn Toán
+              <img style="max-width: 55px; vertical-align: middle;"
+                src="https://f9-zpcloud.zdn.vn/5846337552905202452/0b1041af8f9a5dc4048b.jpg" alt=""> Môn Anh
             </div>
             <hr>
           </div>
         </div>
       </div>
     </div>
-    
 
 
-    <div class="site-section" id="what-we-do-section">
+
+    <div class="site-section" id="album-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-6 section-title">
@@ -745,7 +785,8 @@
               <input type="text" class="form-control" placeholder="Họ và tên học sinh hoặc phụ huynh" required>
             </div>
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Số điện thoại học sinh, phụ huynh" required maxlength="11">
+              <input type="text" class="form-control" placeholder="Số điện thoại học sinh, phụ huynh" required
+                maxlength="11">
             </div>
           </div>
 
@@ -855,6 +896,10 @@
         </div>
       </div>
     </footer>
+
+    <div id="back-to-top" class="back-to-top-btn">
+      <a href="#about-section">Đầu Trang</a>
+    </div>
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -871,6 +916,24 @@
   <script src="js/main.js"></script>
   <script src="js/gmail.js"></script>
   <script src="https://kit.fontawesome.com/c1afb31dbf.js" crossorigin="anonymous"></script>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var backToTopButton = document.getElementById('back-to-top');
+
+      if (window.pageYOffset > 200) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+
+    document.getElementById('back-to-top').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+  </script>
 
   <script>
     // Lấy các phần tử cần sử dụng
