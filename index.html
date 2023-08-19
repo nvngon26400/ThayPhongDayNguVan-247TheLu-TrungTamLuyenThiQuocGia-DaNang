@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
+  <script src="https://kit.fontawesome.com/c1afb31dbf.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
@@ -124,18 +124,35 @@
     }
 
     @keyframes scaleAnimation {
-        0%, 100% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.1);
-            /* border: 1px solid rgb(204, 12, 150);
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+        /* border: 1px solid rgb(204, 12, 150);
             padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255); */
-        }
+      }
     }
 
     .my-heading {
-        animation: scaleAnimation 1s infinite;
+      animation: scaleAnimation 1s infinite;
+    }
+
+    /* CSS cho popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
     }
   </style>
 
@@ -234,6 +251,16 @@
                 <hr>
                 <p style="font-size: 20px;">Số điện thoại: <a href="tel:+0763001758"
                     style="font-weight: bolder; color: rgb(255, 0, 0); font-size: 30px;">0763.001.758</a></p>
+                <p id="popup-trigger" style="cursor: pointer;"><img style="max-width: 45px; background: transparent;" src="https://s120-ava-talk.zadn.vn/e/6/2/5/36/120/16782d311b12da6d28daa13e343986b8.jpg" alt=""> Zalo của thầy Phong tại
+                  đây</p>
+
+                <!-- Popup content -->
+                <div id="popup" class="popup" style="border-top: 3px solid red;">
+                  <p>Quét mã bên dưới để đến Zalo thầy Phong</p>
+                  <p style="text-align: center; align-items: center;"></p>
+                  <button id="close-popup" style="border: 1px solid gray; border-radius: 15px; padding: 6px 10px;">Đóng</button>
+                </div>
+
                 <p style="font-size: 20px;">Địa chỉ: <a
                     href="https://www.google.com/maps/d/u/0/edit?hl=vi&mid=1nBs9pgOqQoDUkviYyiyJ99PFWQIyCL8&ll=16.08105028551656%2C108.2343577&z=18"
                     target="_blank" style="font-weight: bolder; color: black; font-size: 20px;">247 Thế Lữ - Trung tâm
@@ -265,7 +292,9 @@
             <div class="row" style="cursor: pointer;">
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div style="max-height: 400px;" class="service h-100">
-                  <h3 style="margin-bottom: 20px; border: 1px solid rgb(12, 204, 51); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">Lớp 6 <br>Chân trời sáng tạo</h3>
+                  <h3
+                    style="margin-bottom: 20px; border: 1px solid rgb(12, 204, 51); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">
+                    Lớp 6 <br>Chân trời sáng tạo</h3>
                   <p>Lịch học: </p>
                   <p>Thời gian: </p>
                   <p>Địa chỉ: 247 Thế Lữ - TT Luyện thi Quốc Gia</p>
@@ -273,7 +302,9 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="service h-100">
-                  <h3 style="margin-bottom: 20px; border: 1px solid rgb(255, 0, 247); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">Lớp 7 <br>Kết nối tri thức</h3>
+                  <h3
+                    style="margin-bottom: 20px; border: 1px solid rgb(255, 0, 247); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">
+                    Lớp 7 <br>Kết nối tri thức</h3>
                   <p>Lịch học: </p>
                   <p>Thời gian: </p>
                   <p>Địa chỉ: 247 Thế Lữ - TT Luyện thi Quốc Gia</p>
@@ -281,7 +312,9 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="service h-100">
-                  <h3 style="margin-bottom: 20px; border: 1px solid rgb(255, 0, 247); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">Lớp 8 <br>Kết nối tri thức</h3>
+                  <h3
+                    style="margin-bottom: 20px; border: 1px solid rgb(255, 0, 247); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">
+                    Lớp 8 <br>Kết nối tri thức</h3>
                   <p>Lịch học: </p>
                   <p>Thời gian: </p>
                   <p>Địa chỉ: 247 Thế Lữ - TT Luyện thi Quốc Gia</p>
@@ -303,7 +336,9 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="service h-100">
-                  <h3 style="margin-bottom: 20px; border: 1px solid rgb(255, 0, 247); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">Lớp 10 <br>Kết nối tri thức</h3>
+                  <h3
+                    style="margin-bottom: 20px; border: 1px solid rgb(255, 0, 247); font-weight: bolder; padding: 5px 7px; border-radius: 15px; max-width: 300px; text-align: center; background-color: rgb(255, 255, 255);">
+                    Lớp 10 <br>Kết nối tri thức</h3>
                   <p>Lịch học: </p>
                   <p>Thời gian: </p>
                   <p>Địa chỉ: 247 Thế Lữ - TT Luyện thi Quốc Gia</p>
@@ -393,9 +428,11 @@
         <div class="row align-items-center">
           <!-- <p style="font-size: 30px; color: black; margin-top: 50px;">Giới thiệu combo làm chủ kiến thức lớp 9</p><br> -->
           <div class="col-lg-6 mb-5" style="cursor: pointer;">
-            <p style="font-size: 20px; color: rgb(247, 109, 109); margin-top: 50px; font-weight: 500;"><i>Giới thiệu combo
-              làm chủ kiến thức lớp 9</i></p>
-            <img style="max-width: 350px; margin-left: 100px;" src="https://f12-zpc.zdn.vn/5147891724742742576/391f54d837f3e5adbce2.jpg"
+            <p style="font-size: 20px; color: rgb(247, 109, 109); margin-top: 50px; font-weight: 500;"><i>Giới thiệu
+                combo
+                làm chủ kiến thức lớp 9</i></p>
+            <img style="max-width: 350px; margin-left: 100px;"
+              src="https://f12-zpc.zdn.vn/5147891724742742576/391f54d837f3e5adbce2.jpg"
               alt="Free Website Template by Free-Template.co" class="img-fluid other-book" id="zoomable-image">
             <div class="modal" id="image-modal">
               <div class="modal-content">
@@ -865,6 +902,24 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/gmail.js"></script>
+  <script src="https://kit.fontawesome.com/c1afb31dbf.js" crossorigin="anonymous"></script>
+
+  <script>
+    // Lấy các phần tử cần sử dụng
+    const popupTrigger = document.getElementById('popup-trigger');
+    const popup = document.getElementById('popup');
+    const closePopup = document.getElementById('close-popup');
+
+    // Hiển thị popup khi người dùng bấm vào đoạn văn bản
+    popupTrigger.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+
+    // Đóng popup khi người dùng bấm vào nút Đóng
+    closePopup.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+  </script>
 
   <script>
     // JavaScript code here
